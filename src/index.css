@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@media print {
+  /* Set A4 page margins and force exact color printing */
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm;
+  }
+
+  html, body {
+    background-color: #ffffff !important;
+    color: #1c1917 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide website navigation, banners, footers, buttons, and modal overlays */
+  nav,
+  header,
+  footer,
+  .no-print,
+  #pwa-install-banner,
+  #offline-indicator,
+  button,
+  .pwa-banner {
+    display: none !important;
+  }
+
+  /* Ensure modal container does not clip or create scrollbars during print */
+  #certificate-modal-overlay {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    display: block !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  #certificate-modal-overlay > div {
+    max-width: 100% !important;
+    max-height: none !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  .certificate-scroll-container {
+    overflow: visible !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  .certificate-print-area {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #certificate-print-root {
+    box-shadow: none !important;
+    border: 2px solid #b45309 !important;
+    margin: 0 auto !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}

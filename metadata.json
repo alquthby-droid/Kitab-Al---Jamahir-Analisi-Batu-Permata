@@ -1,0 +1,6 @@
+{
+  "name": "Permata Al-Jamahir: Analisis Batu & Numerologi Nama",
+  "description": "Aplikasi penentuan kecocokan batu permata dan peruntungan berdasarkan hisab numerologi nama (Abjad/Jummal) dan rujukan kitab klasik Al-Jamahir fi Ma'rifat al-Jawahir karya Al-Biruni.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
